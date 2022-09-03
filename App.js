@@ -6,6 +6,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Cse from "./src/Cse";
 import Home from "./src/Home";
+import Batch from "./src/Batch";
 
 
 const Stack = createNativeStackNavigator();
@@ -16,6 +17,7 @@ function App() {
       <Stack.Navigator>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="CSE" component={Cse} />
+        <Stack.Screen name="Batch" component={Batch} />
       </Stack.Navigator>
     </NavigationContainer>
   );
